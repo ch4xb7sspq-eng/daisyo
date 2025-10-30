@@ -1,0 +1,15 @@
+/*=====Reset&Base*/
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+:root{
+    --bg:#f6f8fb;--fg:#1f2937;--muted:#6b7280;
+    --card:#ffffff;--border:#e5e7eb;--shadow:0 8px24px rgba(0,0,0,.06);
+    --brand:#2563ed;--brand-weak:#dbeafe;
+    --radius:14px;--radius-sm:10px;
+    --space:24px;--space-sm:12px;--maxw:1100px;
+}
+@media(prefers-color-scheme:derk){
+    :root{
+        --bg:#0b1020;--fg:#e5ecff;--shadow;0 10px 28px rgba(0,0,0,.35);
+    }
+}

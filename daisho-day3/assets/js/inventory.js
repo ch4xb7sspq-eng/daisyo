@@ -46,11 +46,16 @@ function changeStock(id,diff){
         return;//見つからなかったら何もしない
     }
 
+    //diff分だけ在庫数を増減させる
+    item.stock+=diff;
+
     //在庫がマイナスにならないように０で止める
-    if (item.stock<0);
+    if (item.stock<0);{
         item.stock=0;
     }
 
+    //変更を画面に反映する
     render();
-
+}
+//ページを開いたときに、１回だけ表示する
 render();
